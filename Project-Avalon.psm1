@@ -176,19 +176,18 @@ Function EnableLetAppsAccessNotifications {
 	Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" -Name "LetAppsAccessNotifications" -ErrorAction SilentlyContinue
 }
 
-# Disabling : Settings : Privacy : Allow Windows Apps Access Diagnostic Information About Other Apps
-Function DisableLetAppsGetDiagnosticInfo {
-	Write-Output "Disabling : Settings : Privacy : Inking & Typing Personalization : Allow Windows Apps Access Diagnostic Information About Other Apps..."
-	If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy")) {
-		New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" -Force | Out-Null
-	}
-	Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" -Name "LetAppsGetDiagnosticInfo" -Type DWord -Value 2
+# Disable - Settings : Privacy : General : Let Windows track app launches to improve Start and search results - 0 = Turn off 1 = Turn on
+Function DisableStart_TrackProgs {
+
+	Write-Output "Settings : Privacy : General : Let Windows track app launches to improve Start and search results"
+	Set-ItemProperty -Path "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -name "Start_TrackProgs" -value "0" -type "DWORD"
 }
 
-# Enabling : Settings : Privacy : Allow Windows Apps Access Diagnostic Information About Other Apps
-Function EnableLetAppsGetDiagnosticInfo {
-	Write-Output "Enabling : Settings : Privacy : Inking & Typing Personalization : Allow Windows Apps Access Diagnostic Information About Other Apps..."
-	Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" -Name "LetAppsGetDiagnosticInfo" -ErrorAction SilentlyContinue
+# Enable - Settings : Privacy : General : Let Windows track app launches to improve Start and search results - 0 = Turn off 1 = Turn on
+Function EnableStart_TrackProgs {
+
+	Write-Output "Settings : Let Windows track app launches to improve Start and search results"
+	Set-ItemProperty -Path "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -name "Start_TrackProgs" -value "1" -type "DWORD"
 }
 
 ###############################################################################
@@ -276,20 +275,6 @@ Function EnableSoftLanding {
 
 	Write-Output "Settings : System : Notifications & Actions : Get notifications from apps and other senders"
 	Set-ItemProperty -Path "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -name "SoftLandingEnabled" -value "1" -type "DWORD"
-}
-
-# Disable - Settings : Privacy : General : Let Windows track app launches to improve Start and search results - 0 = Turn off 1 = Turn on
-Function DisableStart_TrackProgs {
-
-	Write-Output "Settings : Privacy : General : Let Windows track app launches to improve Start and search results"
-	Set-ItemProperty -Path "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -name "Start_TrackProgs" -value "0" -type "DWORD"
-}
-
-# Enable - Settings : Privacy : General : Let Windows track app launches to improve Start and search results - 0 = Turn off 1 = Turn on
-Function EnableStart_TrackProgs {
-
-	Write-Output "Settings : Let Windows track app launches to improve Start and search results"
-	Set-ItemProperty -Path "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -name "Start_TrackProgs" -value "1" -type "DWORD"
 }
 
 # Disable Tile push notifications
