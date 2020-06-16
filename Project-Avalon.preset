@@ -10,50 +10,50 @@ RequireAdmin
 
 # Settings > Privacy ##########################################################
 
-DisableAdvertisingID					# EnableAdvertisingID							# Settings : Privacy : General : Let Apps use Advertising ID
-DisableWebLangList						# EnableWebLangList								# Settings : Privacy : General : Let Websites provide locally relevant content by accessing my language
-DisableAppSuggestions					# EnableAppSuggestions							# Settings : Privacy : General : Show me suggested content in the settings app
-# DisableLetAppsGetDiagnosticInfo		# EnableLetAppsGetDiagnosticInfo				# Settings : Privacy : Allow Windows Apps Access Diagnostic Information About Other Apps
-EnableDiagTrack							# DisableDiagTrack								# Settings : Privacy : Diagnostics & Feedback - *** ( Effects M$ Family Features ) ***
-# DisableActivityHistory				# EnableActivityHistory							# Settings : Privacy : Activity History : Store my activity
-DisableLocation							# EnableLocation								# Settings : Privacy : Location : Allow Access to location on this device
-DisableCamera							# EnableCamera									# Settings : Privacy : Camera : Allow Access to camera on this device
-# DisableMicrophone						# EnableMicrophone								# Settings : Privacy : Microphone : Allow Access to microphone on this device
-DisableLetAppsAccessAccountInfo			# EnableLetAppsAccessAccountInfo				# Settings : Privacy : Account Info : Let Windows Apps Access Account Information
-# DisableLetAppsAccessContacts			# EnableLetAppsAccessContacts					# Settings : Privacy : Contacts : Allow Access to Contacts On This Device
-# DisableLetAppsAccessCalendar			# EnableLetAppsAccessCalendar					# Settings : Privacy : Calendar : Allow Access to Calendar On This Device
-# DisableLetAppsAccessPhone				# EnableLetAppsAccessPhone 						# Settings : Privacy : Phone : Allow Windows Apps to Make Phone Calls
-# DisableLetAppsAccessCallHistory		# EnableLetAppsAccessCallHistory				# Settings : Privacy : Call History : Allow Windows Apps Access Call History
-# DisableLetAppsAccessEmail				# EnableLetAppsAccessEmail						# Settings : Privacy : Email : Allow Windows Apps Access Email
-# DisableLetAppsAccessTasks				# EnableLetAppsAccessTasks						# Settings : Privacy : Tasks : Allow Windows Apps Access Tasks
-# DisableLetAppsAccessMessaging			# EnableLetAppsAccessMessaging					# Settings : Privacy : Messaging : Allow Windows Apps Access Messaging
-# DisableSensors						# EnableSensors									# Settings : Privacy : Radios : Allow Access to control radios on this device
-# DisableLetAppsAccessTrustedDevices	# EnableLetAppsAccessTrustedDevices				# Settings : Privacy : Other Devices : Allow Windows Apps Access to Trusted Devices
-DisableBackgroundApps					# EnableBackgroundApps							# Settings : Privacy : Background Apps : Let Apps run in the background
-# DisableLetAppsGetDiagnosticInfo		# EnableLetAppsGetDiagnosticInfo				# Settings : Privacy : App Diagnostics : Let Windows Apps Access Diagnostic information about other Apps
-# DisableLetAppsAccessNotifications		# EnableLetAppsAccessNotifications				# Settings : Privacy : Notifications : Allow Windows Apps Access to Notifications
-DisableStart_TrackProgs					# EnableStart_TrackProgs						# Settings : Privacy : General : Let Windows track app launches to improve Start and search results
+DisableAdvertisingID                       # EnableAdvertisingID                         # Settings : Privacy : General : Let Apps use Advertising ID
+DisableWebLangList                         # EnableWebLangList                           # Settings : Privacy : General : Let Websites provide locally relevant content by accessing my language
+DisableAppSuggestions                      # EnableAppSuggestions                        # Settings : Privacy : General : Show me suggested content in the settings app
+# DisableLetAppsGetDiagnosticInfo          # EnableLetAppsGetDiagnosticInfo              # Settings : Privacy : Allow Windows Apps Access Diagnostic Information About Other Apps
+EnableDiagTrack                            # DisableDiagTrack                            # Settings : Privacy : Diagnostics & Feedback - *** ( Effects M$ Family Features ) ***
+# DisableActivityHistory                   # EnableActivityHistory                       # Settings : Privacy : Activity History : Store my activity
+DisableLocation                            # EnableLocation                              # Settings : Privacy : Location : Allow Access to location on this device
+DisableCamera                              # EnableCamera                                # Settings : Privacy : Camera : Allow Access to camera on this device
+# DisableMicrophone                        # EnableMicrophone                            # Settings : Privacy : Microphone : Allow Access to microphone on this device
+DisableLetAppsAccessAccountInfo            # EnableLetAppsAccessAccountInfo              # Settings : Privacy : Account Info : Let Windows Apps Access Account Information
+# DisableLetAppsAccessContacts             # EnableLetAppsAccessContacts                 # Settings : Privacy : Contacts : Allow Access to Contacts On This Device
+# DisableLetAppsAccessCalendar             # EnableLetAppsAccessCalendar                 # Settings : Privacy : Calendar : Allow Access to Calendar On This Device
+# DisableLetAppsAccessPhone                # EnableLetAppsAccessPhone                    # Settings : Privacy : Phone : Allow Windows Apps to Make Phone Calls
+# DisableLetAppsAccessCallHistory          # EnableLetAppsAccessCallHistory              # Settings : Privacy : Call History : Allow Windows Apps Access Call History
+# DisableLetAppsAccessEmail                # EnableLetAppsAccessEmail                    # Settings : Privacy : Email : Allow Windows Apps Access Email
+# DisableLetAppsAccessTasks                # EnableLetAppsAccessTasks                    # Settings : Privacy : Tasks : Allow Windows Apps Access Tasks
+# DisableLetAppsAccessMessaging            # EnableLetAppsAccessMessaging                # Settings : Privacy : Messaging : Allow Windows Apps Access Messaging
+# DisableSensors                           # EnableSensors                               # Settings : Privacy : Radios : Allow Access to control radios on this device
+# DisableLetAppsAccessTrustedDevices       # EnableLetAppsAccessTrustedDevices           # Settings : Privacy : Other Devices : Allow Windows Apps Access to Trusted Devices
+DisableBackgroundApps                      # EnableBackgroundApps                        # Settings : Privacy : Background Apps : Let Apps run in the background
+# DisableLetAppsGetDiagnosticInfo          # EnableLetAppsGetDiagnosticInfo              # Settings : Privacy : App Diagnostics : Let Windows Apps Access Diagnostic information about other Apps
+# DisableLetAppsAccessNotifications        # EnableLetAppsAccessNotifications            # Settings : Privacy : Notifications : Allow Windows Apps Access to Notifications
+DisableStart_TrackProgs                    # EnableStart_TrackProgs                      # Settings : Privacy : General : Let Windows track app launches to improve Start and search results
 
 # Privacy Tweaks ##############################################################
 # Security Tweaks #############################################################
 
-EnableDeferUpdatesPeriodInDays			# DisableDeferUpdatesPeriodInDays				# Settings : Update & Security : Advanced Options : Choose when updates are installed : deferred Windows update option for the Feature updates to 30 days and the Quality updates to 30 days
+EnableDeferUpdatesPeriodInDays             # DisableDeferUpdatesPeriodInDays             # Settings : Update & Security : Advanced Options : Choose when updates are installed : deferred Windows update option for the Feature updates to 30 days and the Quality updates to 30 days
 
 # Network Tweaks ##############################################################
 # Service Tweaks ##############################################################
 # UI Tweaks ###################################################################
 
-HideCortanaButton						# ShowCortanaButton								# Show/Hide : Taskbar : Cortana Button on Taskbar
-DisableSoftLanding						# EnableSoftLanding 							# Settings : System : Notifications & Actions : Get notifications from apps and other senders
-EnableNoTileApplicationNotification		# DisableNoTileApplicationNotification
-EnableLastActiveClick					# Disable LastActiveClick						# Registry : Taskbar Buttons Always Switch to the Last Active Windows
+HideCortanaButton                          # ShowCortanaButton                           # Show/Hide : Taskbar : Cortana Button on Taskbar
+DisableSoftLanding                         # EnableSoftLanding                           # Settings : System : Notifications & Actions : Get notifications from apps and other senders
+EnableNoTileApplicationNotification        # DisableNoTileApplicationNotification
+EnableLastActiveClick                      # Disable LastActiveClick                     # Registry : Taskbar Buttons Always Switch to the Last Active Windows
 
 # Explorer UI Tweaks ##########################################################
 
-EnableShellState						# DisableShellState 							# Control Panel : File Explorer Options : Single/Double Click to open an item
-DisableShowInfoTip						# EnableShowInfoTip 							# Control Panel : File Explorer Options : View : Pop-Up Description For Folders And Desktop Items
-EnableDelegateFolders					# DisableDelegateFolders						# Registry Tweak : Change's made to Local Machine : Remove duplicate Drive Letter entry from Explorer
-DisableSearchBoxSuggestions				# EnableSearchBoxSuggestions 					# Group Policy : Search History in Windows 10 File Explorer
+EnableShellState                           # DisableShellState                           # Control Panel : File Explorer Options : Single/Double Click to open an item
+DisableShowInfoTip                         # EnableShowInfoTip                           # Control Panel : File Explorer Options : View : Pop-Up Description For Folders And Desktop Items
+EnableDelegateFolders                      # DisableDelegateFolders                      # Registry Tweak : Change's made to Local Machine : Remove duplicate Drive Letter entry from Explorer
+DisableSearchBoxSuggestions                # EnableSearchBoxSuggestions                  # Group Policy : Search History in Windows 10 File Explorer
 
 # Application Tweaks ##########################################################
 # Server Specific Tweaks ######################################################
